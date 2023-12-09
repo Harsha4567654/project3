@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">User Profile</h2>
+
+    <!-- <?php
+      // Include the PHP script that retrieves user details
+      include_once 'php/profile.php';
+
+      // Check if user details retrieval was successful
+      if ($response['success']) {
+        $userDetails = $response['userDetails'];
+
+        // Display user details on the webpage
+        echo '<p><strong>Username:</strong> ' . $userDetails['username'] . '</p>' .
+             '<p><strong>Name:</strong> ' . $userDetails['name'] . '</p>' .
+             '<p><strong>Age:</strong> ' . $userDetails['age'] . '</p>' .
+             '<p><strong>Date of Birth:</strong> ' . $userDetails['dob'] . '</p>' .
+             '<p><strong>Contact:</strong> ' . $userDetails['contact'] . '</p>';
+      } else {
+        // Display error message on the webpage
+        echo '<p>Error: ' . $response['message'] . '</p>';
+      }
+    ?> -->
+
+    <div id="profileDetails"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- You can include profile.js here if needed -->
+  <script src="js/profile.js"></script>
+</body>
+</html>
